@@ -1,0 +1,59 @@
+<!--
+    <video>
+        - src
+        - controls
+        - se não funcionar?
+            - fallback content
+        - source
+         - src
+         - type
+
+        - sobre serviços de terceiros 
+        - loop - toca o vídeo novamente
+        - muted - video começa em mutado - o autoplay 
+        passa afuncionar em alguns casos onde o vídeo é muted
+        - poster="./image.png" - a imagem que ficaria
+        antes do vídeo começar
+
+EXEMPLO 1:
+<video src="./video_lyric.mp4"controls>
+//Caso o browser não funcione, dê a seguinte opção de baixar:
+<p> Este browser não suporta vídeo, baixe-o <a href="./video_lyric.mp4">aqui</a></p> 
+<a href="./video_lyric.mp4"></a>
+</video>
+-->
+
+<!-- Vimos, no exemplo 1, que no browser do
+próprio VS o vídeo não funcionou, então nós teriamos 
+que colocar explicando o tipo de video:
+
+<video src="./video_lyric.mp4"
+type="video/mp4"></video>
+
+O HTML é complexo para trabalharmos com videos
+então a dica é conferir em:
+developer.mozilla.org/pt-BR/docs/Web/Media/Formats
+
+que tem como h1: "Media type and format guide: image, audio and video content
+e pesquisa no canto superior direito:
+"media type and format guide"
+-->
+
+<!-- EXEMPLO 2
+
+-->
+<video controls
+    widht="150"
+    height="150"
+    autoplay
+    preload="metadata"
+    muted
+>
+
+<source src="./video_lyric.mp4" type="video/mp4">
+<p> Este browser não suporta vídeo, baixe-o <a href="./video_lyric.mp4">aqui</a></p> 
+<a href="./video_lyric.mp4"></a>
+
+</video>
+
+
